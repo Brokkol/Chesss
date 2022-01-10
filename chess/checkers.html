@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Title
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sass/screen.css">
+    <link rel="stylesheet" href="sass/font.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="color">
+            <div class="color__list">
+                <div class="top">
+                    <h2 class="h2"><a href="index.html"> Вернутся назад</a></h2>
+                    <h2 class="h2">
+                        Выберите цвет:<span class="icon-crown-1"><span class="path1"></span><span class="path2"></span></span>
+                    </h2>
+                    <a href="#" class="menu-nav__btn"><span class="span"></span></a>
+                </div>
+                <nav class="menu-nav">
+                    <a href="#" class="menu-nav__link" id="black">Черный</a>
+                    <a href="#" class="menu-nav__link" id="white">Белый</a>
+                    <a href="#" class="menu-nav__link" id="blue">Голубой</a>
+                    <a href="#" class="menu-nav__link" id="pink">Розовый</a>
+                    <a href="second.html" class="menu-nav__link">Королевы</a>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </section>
+    <canvas id='canvas' class="canvas">
+    </canvas>
+    <script src="js/checkers.js"></script>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Конец игры</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Победили <span class="min" id="min"></span>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn">Запустить заново</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

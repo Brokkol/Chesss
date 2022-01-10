@@ -1,0 +1,23 @@
+.canvas{
+    font-family: icomoon;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    display: block;
+    margin: 2vw auto;
+    margin-bottom: 0;
+    border: var(--borderColor);
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+@media screen and ( max-width:  690px ){
+    .canvas{
+        width: 90vw;
+    }
+}
+@media screen and ( min-width: 691px ){
+    .canvas{
+        height: 90vh;
+    }
+}
+
